@@ -1,3 +1,92 @@
-.test {
-    color: red;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.heading {
+    text-align: center;
+    color: #333;
+}
+
+.row {
+    width: 100%;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    position: relative;    
+    background-color: rgb(241, 185, 185);
+}
+
+.card > p {
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.card-title {
+    font-size: 1.5em;
+    border: 1px solid black;
+    border-radius: 0 8px 0 0;
+    position: absolute;
+    right: 0px;
+    top : 0px;
+    padding: 5px;
+    width: 35%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.meat {
+    background-color: #ff9999;
+    color: white;
+}
+
+.sushi {
+    background-color: #e3b588;
+    color: rgb(0, 0, 0);
+}
+
+.beef {
+    background-color: #99ccff;
+    color: rgb(180, 82, 82);
+}
+
+/* Desktop view (992px and above) */
+@media (min-width: 992px) {
+    .desktop-only {
+        float: left;;
+        width: 31%;
+        margin: 0 1%;
+    }
+}
+
+/* Tablet view (768px to 991px) */
+@media (min-width: 769px) and (max-width: 991px) {
+    .tablet {
+        float: left;
+        width: 48%;
+        margin: 1%;
+    }
+
+    /* Make the last card full width if odd number of cards */
+    .card:nth-last-child(1):nth-child(odd) {
+        width : 98%;  
+    }
+}
+
+/* Mobile view (below 768px) */
+@media (max-width: 768px) {
+    .mobile {
+        width: 100%;
+        margin: 5% auto 5% auto;
+    }
 }
