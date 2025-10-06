@@ -1,3 +1,31 @@
-h1 {
-    color: blue;
+
+ul.navbar-nav li {
+    font-size: 1.3em;
+    background-color: rgb(238, 228, 228);
+}
+
+section.tall-section {
+    margin-top: 10px;
+    height: 1500px;
+    background-color: rgb(240, 240, 240);
+}
+
+nav.navbar-default {
+    margin-bottom: 0px;
+}
+
+.menu-title {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.menu-item h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    section.tall-section {
+        width: 70%;
+    }
 }
